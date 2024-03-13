@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Scene fill="BLACK" onKeyPressed="#isKeyPressed" onKeyReleased="#isKeyReleased" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameSceneController">
+    <AnchorPane prefHeight="800.0" prefWidth="1280.0">
+      <children>
+         <ImageView fx:id="spaceBackground" fitHeight="2400.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@Misc/spaceBackgroundGame.png" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="dustBackground" fitHeight="2400.0" fitWidth="1280.0">
+            <image>
+               <Image url="@Misc/starDust.png" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="starBackground" fitHeight="2400.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@Misc/starBackground.png" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="asteroid4" fitHeight="150.0" fitWidth="200.0" layoutX="370.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@Textures/asteroids4.png" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="asteroid3" fitHeight="150.0" fitWidth="200.0" layoutX="552.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@Textures/asteroids3.png" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="asteroid2" fitHeight="150.0" fitWidth="200.0" layoutX="735.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@Textures/asteroids2.png" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="asteroid1" fitHeight="150.0" fitWidth="200.0" layoutX="906.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@Textures/asteroids1.png" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="spaceship" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="640.0" AnchorPane.topAnchor="700.0">
+            <image>
+               <Image url="@Textures/Ship.png" />
+            </image>
+         </ImageView>
+         <VBox prefHeight="200.0" prefWidth="35.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <children>
+               <Label text="HP" textFill="WHITE">
+                  <font>
+                     <Font size="24.0" />
+                  </font>
+               </Label>
+               <ImageView fx:id="hpBar1" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@Textures/hpbar.gif" />
+                  </image>
+               </ImageView>
+               <ImageView fx:id="hpBar2" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@Textures/hpbar.gif" />
+                  </image>
+               </ImageView>
+               <ImageView fx:id="hpBar3" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@Textures/hpbar.gif" />
+                  </image>
+               </ImageView>
+            </children>
+         </VBox>
+         <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" AnchorPane.leftAnchor="1150.0" AnchorPane.topAnchor="20.0">
+            <children>
+               <Label text="SCORE" textFill="WHITE">
+                  <font>
+                     <Font size="24.0" />
+                  </font>
+               </Label>
+               <Label fx:id="scoreLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="0" textFill="WHITE">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+            </children>
+         </VBox>
+      </children></AnchorPane>
+</Scene>
